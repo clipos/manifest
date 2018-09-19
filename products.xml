@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+<!--
+SPDX-License-Identifier: LGPL-2.1-or-later
+Copyright © 2017-2018 ANSSI. All rights reserved.
+-->
+
+  <!-- The CLIP OS product with its own recipes -->
+  <project name="products_clipos" path="products/clipos" />
+
+<!-- vim: set ts=2 sts=2 sw=2 et: -->
+</manifest>

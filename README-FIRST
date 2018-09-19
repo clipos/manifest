@@ -1,0 +1,15 @@
+Congratulations!
+
+You seem to have successfully fetched and synchronize a complete CLIP OS source
+tree. :)
+
+This file is here just to provide you some pointers on how to get started with
+building, running or modifying a CLIP OS image.
+
+You will find all the documentation for the project at https://docs.clip-os.org.
+
+You may file bugs as issue at https://github.com/clipos/bugs.
+
+You may also send a mail to clipos@ssi.gouv.fr.
+
+~ The CLIP OS developers

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+<!--
+SPDX-License-Identifier: LGPL-2.1-or-later
+Copyright © 2017-2018 ANSSI. All rights reserved.
+-->
+
+  <!-- Local crates.io registry for Rust crates -->
+  <project name="assets_crates-io" path="assets/crates-io" />
+
+  <!-- Debian assets for Debian-based SDK (recipe "clip/sdk_debian") -->
+  <project name="assets_debian" path="assets/debian" />
+
+  <!-- The Gentoo distfiles referenced within the Gentoo Portage tree or any of
+       its overlays. These distfiles are kept in Git repositories to allow
+       offline builds and as a backup reference (as Gentoo often prune old
+       distfiles not used anymore in the upstream Portage tree from their
+       mirrors). -->
+  <project name="assets_distfiles" path="assets/distfiles" />
+
+  <!-- Gentoo stage3 image serving as a bootstrap rootfs image for the CLIP OS
+       SDK (recipe "clip/sdk"): -->
+  <project name="assets_gentoo" path="assets/gentoo" />
+
+  <!-- Python packages vendored to allow offline deployments of the CLIP OS
+       toolkit. This allow us to depend neither on PyPI registry nor on the
+       Linux distributions packages mirrors (moreover some Python packages
+       enclosed in this repository are not packaged on most common Linux
+       distributions): -->
+  <project name="assets_toolkit" path="assets/toolkit" />
+
+<!-- vim: set ts=2 sts=2 sw=2 et: -->
+</manifest>
