@@ -1,1 +1,138 @@
-base.xml
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+<!--
+SPDX-License-Identifier: LGPL-2.1-or-later
+Copyright © 2017-2018 ANSSI. All rights reserved.
+-->
+
+  <!--
+    repo Manifest file for the CLIP OS Project
+    ==========================================
+
+    Here are the guidelines regarding the formatting of the XML Manifest files
+    (side note: the "cosmk snapshot" comply with those guidelines):
+
+    1. XML tags must be contained on one line. No exceptions.
+    2. XML attributes within a tag must be ordered alphabetically.
+    3. XML tags indentation must be respected and use 2 spaces. No tabs.
+  -->
+
+  <!--
+    Optional notice message to show at the end of each "repo sync"
+    ==============================================================
+
+    Be concise as this will show up whenever the user does a "repo sync".
+  -->
+  <notice>
+  </notice>
+
+  <!--
+    The Git remotes definitions
+    ===========================
+
+    1. You can define a special Git remote with the attribute `fetch="."`.
+       This remote will be considered to be the same URL as the one that you
+       use for the manifest repository used by repo (i.e., the "repo init
+       -u <URL>" minus the child item "/manifest" from that URL).
+       Warning: this trick seems to work only with HTTP(S) URLs.
+    2. Do not forget to declare the base URL of the Gerrit instance tied to the
+       concerned remote in the "review" XML attribute. This enables you to
+       interact with the proper Gerrit instance for each project (with the help
+       of the "repo upload" commands) but also activates the "commit-msg" hook
+       from Gerrit that will automatically tag your commit messages with a
+       "Change-Id". In other terms, you will need this attribute if a
+       repository is backed by a Gerrit instance (even if you do not plan to
+       use the Gerrit-related repo commands).
+    3. In the context of a CLIP OS derivative project, please take care to
+       check that the remote used by the out-of-band manifest repository clone
+       (defined just below) is not the remote for the upstream project (e.g.,
+       CLIP OS) but the remote holding *YOUR* manifest repository.
+  -->
+  <remote fetch="." name="origin" review="" />
+
+  <!--
+    An out-of-band manifest repository clone for developer convenience
+    ==================================================================
+
+    THIS MANIFEST REPOSITORY CLONE IS NOT THE REPOSITORY WHICH REPO USES AS ITS
+    MANIFEST REFERENCE. AS A CONSEQUENCE, ANY CHANGE (COMMITTED OR NOT) IN THIS
+    MANIFEST DIRECTORY WON'T BE TAKEN INTO ACCOUNT BY REPO AS IT IS NOT THE
+    MANIFEST REFERENCE THAT REPO USES.
+
+    This manifest repository clone serves only as a place for the developer to
+    work on a current manifest working tree that is *NOT* the tree used by repo
+    (which is in ".repo/manifests/" and which may be tricky to change
+    on-the-fly). This repository clone also serves as a place for the cosmk
+    tool to bring changes to the manifest files with the feature "cosmk
+    snapshot".
+  -->
+  <project groups="meta" name="manifest" path="manifest" remote="origin">
+    <linkfile dest="LICENSE" src="LICENSE" />
+    <linkfile dest="README-FIRST" src="README-FIRST" />
+  </project>
+
+  <!--
+    The default settings to use for all the repo <project>'s
+    ========================================================
+
+    1. These settings are still "overridable" per project.
+    2. "sync-j" is set to 1 to prevent repo from messing the output of the
+       commands by interweaving the output of all the subprocesses this setting
+       would launch. Increasing this value is still available to the
+       user/developer on the command line (e.g., "repo sync -j5").
+  -->
+  <default remote="origin" revision="master" sync-j="1" />
+
+  <!--
+    Organization of the sub-repositories for the overall project
+    ============================================================
+
+    The following parts define all the sub-repositories (a.k.a. repo projects)
+    that compose the overall project (e.g., CLIP OS).
+
+    Here are some guidelines for those sub-repositories declarations:
+
+    1. From this point on, this file (and the files included with the
+       "<include>" directive) must only declare sub-repositories (i.e., repo
+       "<projects>") and nothing else. To put it differently, the following
+       lines (and the following files included via those lines) must only
+       contain "<project>" or "<include>" XML tags and NOTHING ELSE.
+    2. To avoid cluttering this file, you should not declare sub-repositories
+       here, but rather in a dedicated file sitting next to this current XML
+       file (as shown with the "clipos.xml" file below). Feel free to split
+       those said sub-repositories declaration into multiple smaller files (as
+       it is done in the "clipos" directory) in order to ease change tracking
+       with Git over time.
+    3. In the context of a derivative project, it is allowed to modify
+       the contents of an XML file specific to a derived parent project.
+       Usually such an operation is done to remove a sub-project used by a
+       derived parent project (e.g., CLIP OS) that is of no use in the
+       concerned derivative project.
+    4. Repo projects within those files are tagged with the help of repo
+       project groups. Here is a reference of the repo groups used for these
+       projects:
+       - `alt`: Projects that do not require a head Git commit declaration in
+         the manifest file. Usually this group covers the third-party and
+         platform-related repo projects which are exclusively used by a
+         packaging recipe (e.g., an "ebuild" file) stating specifically the
+         good head commit to use (e.g., with a "CROS_WORKON" value for the case
+         of a project which usage is wrapped inside an ebuild package in a
+         Portage tree overlay).
+         As a consequence, there is no need to specify the head Git commit
+         (e.g., when snapshotting the overall project) since the packaging tool
+         (e.g., Portage with the "cros-workon" eclass) will automatically
+         checkout this tree to the appropriate commit declared in the recipe
+         (the "ebuild" file in the previous example).
+       - `meta`: Meta projects that do not intervene in the requirements for
+         building or using the source tree normally. Usually this group covers
+         all the repository projects that are there only for a developer
+         convenience (e.g., the out-of-band manifest project declared above or
+         any release engineering related project used by the continuous
+         integration infrastructure).
+  -->
+
+  <!-- The CLIP OS Project <https://clip-os.org> -->
+  <include name="clipos.xml" />
+
+<!-- vim: set ts=2 sts=2 sw=2 et: -->
+</manifest>

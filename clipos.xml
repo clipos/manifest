@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+<!--
+SPDX-License-Identifier: LGPL-2.1-or-later
+Copyright © 2017-2018 ANSSI. All rights reserved.
+-->
+
+  <include name="clipos/toolkit.xml" />
+
+  <include name="clipos/assets.xml" />
+
+  <include name="clipos/products.xml" />
+
+  <include name="clipos/packaging.xml" />
+
+  <include name="clipos/sources.xml" />
+
+<!-- vim: set ts=2 sts=2 sw=2 et: -->
+</manifest>
