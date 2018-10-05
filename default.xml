@@ -123,6 +123,8 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
          (e.g., Portage with the "cros-workon" eclass) will automatically
          checkout this tree to the appropriate commit declared in the recipe
          (the "ebuild" file in the previous example).
+       - `lfs`: Projects which are backed by Git LFS for the storage of large
+         files in order to prevent from clogging up the Git objects.
        - `meta`: Meta projects that do not intervene in the requirements for
          building or using the source tree normally. Usually this group covers
          all the repository projects that are there only for a developer
