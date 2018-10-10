@@ -30,12 +30,19 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     The Git remotes definitions
     ===========================
 
-    1. You can define a special Git remote with the attribute `fetch="."`.
+    1. In order to prevent Git remote name collisions in derived manifests, you
+       must name the Git remotes with the same name as the Git organization
+       (i.e., your GitHub username or the name of your CLIP OS derivative) in
+       which all the concerned repositories are pooled. As a consequence, do
+       not name any Git remote "origin" as this name may be misleading in the
+       context of a derived manifest that deals with multiple Git remotes and
+       would hide the true origin of that "origin" Git remote.
+    2. You can define a special Git remote with the attribute `fetch="."`.
        This remote will be considered to be the same URL as the one that you
        use for the manifest repository used by repo (i.e., the "repo init
        -u <URL>" minus the child item "/manifest" from that URL).
        Warning: this trick seems to work only with HTTP(S) URLs.
-    2. Do not forget to declare the base URL of the Gerrit instance tied to the
+    3. Do not forget to declare the base URL of the Gerrit instance tied to the
        concerned remote in the "review" XML attribute. This enables you to
        interact with the proper Gerrit instance for each project (with the help
        of the "repo upload" commands) but also activates the "commit-msg" hook
@@ -43,12 +50,12 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
        "Change-Id". In other terms, you will need this attribute if a
        repository is backed by a Gerrit instance (even if you do not plan to
        use the Gerrit-related repo commands).
-    3. In the context of a CLIP OS derivative project, please take care to
+    4. In the context of a CLIP OS derivative project, please take care to
        check that the remote used by the out-of-band manifest repository clone
        (defined just below) is not the remote for the upstream project (e.g.,
        CLIP OS) but the remote holding *YOUR* manifest repository.
   -->
-  <remote fetch="." name="origin" review="" />
+  <remote fetch="." name="clipos" review="" />
 
   <!--
     An out-of-band manifest repository clone for developer convenience
@@ -66,7 +73,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     tool to bring changes to the manifest files with the feature "cosmk
     snapshot".
   -->
-  <project groups="meta" name="manifest" path="manifest" remote="origin">
+  <project groups="meta" name="manifest" path="manifest" remote="clipos">
     <linkfile dest="LICENSE" src="LICENSE" />
     <linkfile dest="README-FIRST" src="README-FIRST" />
   </project>
@@ -81,7 +88,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
        would launch. Increasing this value is still available to the
        user/developer on the command line (e.g., "repo sync -j5").
   -->
-  <default remote="origin" revision="master" sync-j="1" />
+  <default remote="clipos" revision="master" sync-j="1" />
 
   <!--
     Organization of the sub-repositories for the overall project
