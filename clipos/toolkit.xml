@@ -6,7 +6,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
 -->
 
   <!-- The CLIP OS toolkit -->
-  <project name="toolkit" path="toolkit" />
+  <project groups="toolkit" name="toolkit" path="toolkit" />
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->
 </manifest>

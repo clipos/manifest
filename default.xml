@@ -138,6 +138,10 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
          convenience (e.g., the out-of-band manifest project declared above or
          any release engineering related project used by the continuous
          integration infrastructure).
+       - `toolkit`: The minimal project subset that are required to make the
+         CLIP OS toolkit (the cosmk tool and the related shell scripts) work.
+         This repo project group is mainly used by some CI jobs which do not
+         make use of some repositories of the source tree.
   -->
 
   <!-- The CLIP OS Project <https://clip-os.org> -->

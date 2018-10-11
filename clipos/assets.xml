@@ -5,8 +5,9 @@ SPDX-License-Identifier: LGPL-2.1-or-later
 Copyright © 2017-2018 ANSSI. All rights reserved.
 -->
 
-  <!-- Local crates.io registry for Rust crates -->
-  <project groups="lfs" name="assets_crates-io" path="assets/crates-io" />
+  <!-- Vendored and local Rust crates registry to be able to compile the "just"
+       CLI tool offline: -->
+  <project groups="lfs,toolkit" name="assets_crates-io" path="assets/crates-io" />
 
   <!-- Debian assets for Debian-based SDK (recipe "clipos/sdk_debian") -->
   <project groups="lfs" name="assets_debian" path="assets/debian" />
@@ -27,7 +28,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
        Linux distributions packages mirrors (moreover some Python packages
        enclosed in this repository are not packaged on most common Linux
        distributions): -->
-  <project groups="lfs" name="assets_toolkit" path="assets/toolkit" />
+  <project groups="lfs,toolkit" name="assets_toolkit" path="assets/toolkit" />
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->
 </manifest>
