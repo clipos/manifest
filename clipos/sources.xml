@@ -13,25 +13,25 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
        the CLIP OS toolkit) to ease synchonization with upstream git
        repositories. -->
   <project groups="alt" name="src_external_linux" path="src/external/linux">
-    <annotation name="UPSTREAM_GIT_0" value="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git" />
-    <annotation name="UPSTREAM_REFS_0" value="refs/heads/linux-4.18.y:refs/heads/upstream/stable/linux-4.18.y refs/tags/v4*:refs/tags/v4*" />
-    <annotation name="UPSTREAM_GIT_1" value="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git" />
-    <annotation name="UPSTREAM_REFS_1" value="refs/heads/master:refs/heads/upstream/torvalds/master refs/tags/v4*:refs/tags/v4*" />
-    <annotation name="UPSTREAM_GIT_2" value="https://github.com/anthraxx/linux-hardened.git" />
-    <annotation name="UPSTREAM_REFS_2" value="refs/heads/4.*:refs/heads/upstream/linux-hardened/4.* refs/tags/4*:refs/tags/v4*-linux-hardened" />
-    <annotation name="UPSTREAM_GIT_3" value="https://github.com/minipli/linux-unofficial_grsec.git" />
-    <annotation name="UPSTREAM_REFS_3" value="refs/heads/linux-4.9.x-unofficial_grsec:refs/heads/upstream/linux-unofficial_grsec/linux-4.9.x refs/tags/*-unofficial_grsec:refs/tags/*-unofficial_grsec" />
-    <annotation name="UPSTREAM_GIT_4" value="https://git.kernel.org/pub/scm/linux/kernel/git/jforbes/linux.git" />
-    <annotation name="UPSTREAM_REFS_4" value="refs/heads/lockdown:refs/heads/upstream/jforbes/lockdown" />
-    <annotation name="UPSTREAM_GIT_5" value="https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git" />
-    <annotation name="UPSTREAM_REFS_5" value="refs/heads/for-next/gcc-plugin/stackleak:refs/heads/upstream/kspp/stackleak-v15" />
+    <annotation name="UPSTREAM_0_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git" />
+    <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/linux-4.18.y:refs/heads/upstream/stable/linux-4.18.y refs/tags/v4*:refs/tags/v4*" />
+    <annotation name="UPSTREAM_1_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git" />
+    <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/master:refs/heads/upstream/torvalds/master refs/tags/v4*:refs/tags/v4*" />
+    <annotation name="UPSTREAM_2_URL" value="https://github.com/anthraxx/linux-hardened.git" />
+    <annotation name="UPSTREAM_2_REFSPECS" value="refs/heads/4.*:refs/heads/upstream/linux-hardened/4.* refs/tags/4*:refs/tags/v4*-linux-hardened" />
+    <annotation name="UPSTREAM_3_URL" value="https://github.com/minipli/linux-unofficial_grsec.git" />
+    <annotation name="UPSTREAM_3_REFSPECS" value="refs/heads/linux-4.9.x-unofficial_grsec:refs/heads/upstream/linux-unofficial_grsec/linux-4.9.x refs/tags/*-unofficial_grsec:refs/tags/*-unofficial_grsec" />
+    <annotation name="UPSTREAM_4_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/jforbes/linux.git" />
+    <annotation name="UPSTREAM_4_REFSPECS" value="refs/heads/lockdown:refs/heads/upstream/jforbes/lockdown" />
+    <annotation name="UPSTREAM_5_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git" />
+    <annotation name="UPSTREAM_5_REFSPECS" value="refs/heads/for-next/gcc-plugin/stackleak:refs/heads/upstream/kspp/stackleak-v15" />
   </project>
 
   <project groups="alt" name="src_external_systemd" path="src/external/systemd">
-    <annotation name="UPSTREAM_GIT_0" value="https://github.com/systemd/systemd.git" />
-    <annotation name="UPSTREAM_REFS_0" value="refs/heads/master:refs/heads/upstream/master refs/tags/v*:refs/tags/v*" />
-    <annotation name="UPSTREAM_GIT_1" value="https://github.com/systemd/systemd-stable.git" />
-    <annotation name="UPSTREAM_REFS_1" value="refs/heads/v*-stable:refs/heads/upstream-stable/v*-stable" />
+    <annotation name="UPSTREAM_0_URL" value="https://github.com/systemd/systemd.git" />
+    <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/master:refs/heads/upstream/master refs/tags/v*:refs/tags/v*" />
+    <annotation name="UPSTREAM_1_URL" value="https://github.com/systemd/systemd-stable.git" />
+    <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/v*-stable:refs/heads/upstream-stable/v*-stable" />
   </project>
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->

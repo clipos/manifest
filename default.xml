@@ -144,5 +144,22 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
   <!-- The CLIP OS Project <https://clip-os.org> -->
   <include name="clipos.xml" />
 
+  <!--
+    About the project annotations
+    =============================
+
+    The Manifest files for the CLIP OS project make use of project annotations
+    to enhance repo with interesting features. Those features include the
+    ability to automatically fetch the upstream references in dedicated
+    upstream branches in order to easily follow and track the upstream projects
+    evolutions, and the ability to verify the OpenPGP signatures of the Git
+    references against the appopriate public keys stored in a dedicated
+    project.
+
+    See the inline documentation in the helper script "eval-annotations.sh" (in
+    the CLIP OS toolkit project) for further explanations and syntax details
+    for these annotations.
+  -->
+
 <!-- vim: set ts=2 sts=2 sw=2 et: -->
 </manifest>
