@@ -73,7 +73,10 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     tool to bring changes to the manifest files with the feature "cosmk
     snapshot".
   -->
-  <project groups="meta" name="manifest" path="manifest" remote="clipos" />
+  <project groups="meta" name="manifest" path="manifest" remote="clipos">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
 
   <!--
     The default settings to use for all the repo <project>'s

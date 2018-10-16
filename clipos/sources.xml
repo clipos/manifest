@@ -25,6 +25,10 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="UPSTREAM_4_REFSPECS" value="refs/heads/lockdown:refs/heads/upstream/jforbes/lockdown" />
     <annotation name="UPSTREAM_5_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git" />
     <annotation name="UPSTREAM_5_REFSPECS" value="refs/heads/for-next/gcc-plugin/stackleak:refs/heads/upstream/kspp/stackleak-v15" />
+
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*-clipos" />
+    <annotation name="VERIFY_0_REFS_EXCLUDE" value="refs/heads/upstream/*" />
   </project>
 
   <project groups="alt" name="src_external_systemd" path="src/external/systemd">
@@ -32,6 +36,10 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/master:refs/heads/upstream/master refs/tags/v*:refs/tags/v*" />
     <annotation name="UPSTREAM_1_URL" value="https://github.com/systemd/systemd-stable.git" />
     <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/v*-stable:refs/heads/upstream-stable/v*-stable" />
+
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/*" />
+    <annotation name="VERIFY_0_REFS_EXCLUDE" value="refs/heads/v238-stable refs/heads/upstream/* refs/heads/upstream-stable/*" />
   </project>
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->

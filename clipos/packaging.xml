@@ -6,7 +6,11 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
 -->
 
   <!-- The Portage tree and overlays -->
-  <project name="src_portage_clipos" path="src/portage/clipos" />
+  <project name="src_portage_clipos" path="src/portage/clipos">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
+
   <project name="src_portage_gentoo" path="src/portage/gentoo" />
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->

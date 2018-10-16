@@ -7,28 +7,43 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
 
   <!-- Vendored and local Rust crates registry to be able to compile the "just"
        CLI tool offline: -->
-  <project groups="lfs,toolkit" name="assets_crates-io" path="assets/crates-io" />
+  <project groups="lfs,toolkit" name="assets_crates-io" path="assets/crates-io">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
 
   <!-- Debian assets for Debian-based SDK (recipe "clipos/sdk_debian") -->
-  <project groups="lfs" name="assets_debian" path="assets/debian" />
+  <project groups="lfs" name="assets_debian" path="assets/debian">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
 
   <!-- The Gentoo distfiles referenced within the Gentoo Portage tree or any of
        its overlays. These distfiles are kept in Git repositories to allow
        offline builds and as a backup reference (as Gentoo often prune old
        distfiles not used anymore in the upstream Portage tree from their
        mirrors). -->
-  <project groups="lfs" name="assets_distfiles" path="assets/distfiles" />
+  <project groups="lfs" name="assets_distfiles" path="assets/distfiles">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
 
   <!-- Gentoo stage3 image serving as a bootstrap rootfs image for the CLIP OS
        SDK (recipe "clipos/sdk"): -->
-  <project groups="lfs" name="assets_gentoo" path="assets/gentoo" />
+  <project groups="lfs" name="assets_gentoo" path="assets/gentoo">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
 
   <!-- Python packages vendored to allow offline deployments of the CLIP OS
        toolkit. This allow us to depend neither on PyPI registry nor on the
        Linux distributions packages mirrors (moreover some Python packages
        enclosed in this repository are not packaged on most common Linux
        distributions): -->
-  <project groups="lfs,toolkit" name="assets_toolkit" path="assets/toolkit" />
+  <project groups="lfs,toolkit" name="assets_toolkit" path="assets/toolkit">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->
 </manifest>

@@ -6,7 +6,10 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
 -->
 
   <!-- The CLIP OS product with its own recipes -->
-  <project name="products_clipos" path="products/clipos" />
+  <project name="products_clipos" path="products/clipos">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->
 </manifest>

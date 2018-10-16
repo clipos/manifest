@@ -6,7 +6,10 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
 -->
 
   <!-- The CLIP OS toolkit -->
-  <project groups="toolkit" name="toolkit" path="toolkit" />
+  <project groups="toolkit" name="toolkit" path="toolkit">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/*" />
+  </project>
 
 <!-- vim: set ts=2 sts=2 sw=2 et: -->
 </manifest>
