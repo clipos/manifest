@@ -73,10 +73,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     tool to bring changes to the manifest files with the feature "cosmk
     snapshot".
   -->
-  <project groups="meta" name="manifest" path="manifest" remote="clipos">
-    <linkfile dest="LICENSE" src="LICENSE" />
-    <linkfile dest="README-FIRST" src="README-FIRST" />
-  </project>
+  <project groups="meta" name="manifest" path="manifest" remote="clipos" />
 
   <!--
     The default settings to use for all the repo <project>'s
