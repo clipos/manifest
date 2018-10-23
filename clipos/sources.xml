@@ -11,6 +11,11 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
   </project>
 
+  <project groups="alt" name="src_platform_portage-derive" path="src/platform/portage-derive">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
+
   <project groups="alt" name="src_platform_updater" path="src/platform/updater">
     <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
     <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
