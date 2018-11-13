@@ -5,6 +5,12 @@ SPDX-License-Identifier: LGPL-2.1-or-later
 Copyright © 2017-2018 ANSSI. All rights reserved.
 -->
 
+  <!-- CLIP OS projects -->
+  <project groups="alt" name="src_platform_config-linux-hardware" path="src/platform/config-linux-hardware">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
+
   <!-- Third-party projects (i.e. projects not originated from the CLIP OS
        project) that are used within CLIP OS with potential modifications (i.e.
        in other words, these projects may be "forks" of upstream projects).
