@@ -11,7 +11,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
   </project>
 
-  <project name="src_portage_gentoo" path="src/portage/gentoo" />
+  <project name="src_portage_gentoo" path="src/portage/gentoo">
     <annotation name="UPSTREAM_0_URL" value="https://anongit.gentoo.org/git/repo/gentoo.git" />
     <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/master:refs/heads/upstream/gentoo/master" />
   </project>
