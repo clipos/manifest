@@ -55,7 +55,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
        (defined just below) is not the remote for the upstream project (e.g.,
        CLIP OS) but the remote holding *YOUR* manifest repository.
   -->
-  <remote fetch="." name="clipos" review="" />
+  <remote fetch="." name="clipos" review="https://review.clip-os.org" />
 
   <!--
     An out-of-band manifest repository clone for developer convenience
