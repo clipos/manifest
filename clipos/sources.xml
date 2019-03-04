@@ -14,11 +14,11 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
        repositories. -->
   <project groups="alt" name="src_external_linux" path="src/external/linux">
     <annotation name="UPSTREAM_0_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git" />
-    <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/linux-4.20.y:refs/heads/upstream/stable/linux-4.20.y refs/tags/v4*:refs/tags/v4* refs/tags/v5*:refs/tags/v5*" />
+    <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/linux-4.20.y:refs/heads/upstream/stable/linux-4.20.y refs/heads/linux-5.0.y:refs/heads/upstream/stable/linux-5.0.y refs/tags/v4*:refs/tags/v4* refs/tags/v5*:refs/tags/v5*" />
     <annotation name="UPSTREAM_1_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git" />
     <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/master:refs/heads/upstream/torvalds/master refs/tags/v5*:refs/tags/v5*" />
     <annotation name="UPSTREAM_2_URL" value="https://github.com/anthraxx/linux-hardened.git" />
-    <annotation name="UPSTREAM_2_REFSPECS" value="refs/heads/4.*:refs/heads/upstream/linux-hardened/4.* refs/tags/*:refs/tags/v*-linux-hardened" />
+    <annotation name="UPSTREAM_2_REFSPECS" value="refs/heads/4.*:refs/heads/upstream/linux-hardened/4.* refs/heads/5.*:refs/heads/upstream/linux-hardened/5.* refs/tags/4.*:refs/tags/v4.*-linux-hardened refs/tags/5.*:refs/tags/v5.*-linux-hardened" />
     <annotation name="UPSTREAM_3_URL" value="https://github.com/minipli/linux-unofficial_grsec.git" />
     <annotation name="UPSTREAM_3_REFSPECS" value="refs/heads/linux-4.9.x-unofficial_grsec:refs/heads/upstream/linux-unofficial_grsec/linux-4.9.x refs/tags/*-unofficial_grsec:refs/tags/*-unofficial_grsec" />
     <annotation name="UPSTREAM_4_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/jforbes/linux.git" />
