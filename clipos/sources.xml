@@ -11,6 +11,11 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
   </project>
 
+  <project groups="alt" name="src_platform_updater" path="src/platform/updater">
+    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
+    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
+  </project>
+
   <!-- Third-party projects (i.e. projects not originated from the CLIP OS
        project) that are used within CLIP OS with potential modifications (i.e.
        in other words, these projects may be "forks" of upstream projects).
