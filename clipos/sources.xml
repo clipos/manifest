@@ -44,7 +44,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="UPSTREAM_0_URL" value="https://github.com/systemd/systemd.git" />
     <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/master:refs/heads/upstream/master refs/tags/v*:refs/tags/v*" />
     <annotation name="UPSTREAM_1_URL" value="https://github.com/systemd/systemd-stable.git" />
-    <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/v238-stable:refs/heads/upstream-stable/v238-stable refs/heads/v241-stable:refs/heads/upstream-stable/v241-stable refs/heads/v242-stable:refs/heads/upstream-stable/v242-stable" />
+    <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/v243-stable:refs/heads/upstream-stable/v243-stable" />
 
     <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
     <annotation name="VERIFY_0_REFS" value="refs/heads/*" />
