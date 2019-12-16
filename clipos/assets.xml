@@ -12,12 +12,6 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
   </project>
 
-  <!-- Debian assets for Debian-based SDK (recipe "clipos/sdk_debian") -->
-  <project groups="lfs" name="assets_debian" path="assets/debian">
-    <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
-    <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*" />
-  </project>
-
   <!-- The Gentoo distfiles referenced within the Gentoo Portage tree or any of
        its overlays. These distfiles are kept in Git repositories to allow
        offline builds and as a backup reference (as Gentoo often prune old
