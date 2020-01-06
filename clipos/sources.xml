@@ -30,10 +30,6 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
     <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/master:refs/heads/upstream/torvalds/master refs/tags/v5*:refs/tags/v5*" />
     <annotation name="UPSTREAM_2_URL" value="https://github.com/anthraxx/linux-hardened.git" />
     <annotation name="UPSTREAM_2_REFSPECS" value="refs/heads/5.*:refs/heads/upstream/linux-hardened/5.* refs/tags/5.*:refs/tags/v5.*-linux-hardened" />
-    <annotation name="UPSTREAM_3_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/jforbes/linux.git" />
-    <annotation name="UPSTREAM_3_REFSPECS" value="refs/heads/lockdown:refs/heads/upstream/jforbes/lockdown" />
-    <annotation name="UPSTREAM_4_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/kees/linux.git" />
-    <annotation name="UPSTREAM_4_REFSPECS" value="refs/heads/for-next/gcc-plugin/stackleak:refs/heads/upstream/kspp/stackleak-v15" />
 
     <annotation name="VERIFY_0_KEYRINGS" value="clipos/anssi" />
     <annotation name="VERIFY_0_REFS" value="refs/heads/* refs/tags/*-clipos" />
