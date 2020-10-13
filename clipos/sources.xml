@@ -30,7 +30,7 @@ Copyright © 2017-2018 ANSSI. All rights reserved.
        repositories. -->
   <project groups="alt" name="src_external_linux" path="src/external/linux">
     <annotation name="UPSTREAM_0_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git" />
-    <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/linux-5.8.y:refs/heads/upstream/stable/linux-5.8.y refs/tags/v5*:refs/tags/v5*" />
+    <annotation name="UPSTREAM_0_REFSPECS" value="refs/heads/linux-5.9.y:refs/heads/upstream/stable/linux-5.9.y refs/tags/v5*:refs/tags/v5*" />
     <annotation name="UPSTREAM_1_URL" value="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git" />
     <annotation name="UPSTREAM_1_REFSPECS" value="refs/heads/master:refs/heads/upstream/torvalds/master refs/tags/v5*:refs/tags/v5*" />
     <annotation name="UPSTREAM_2_URL" value="https://github.com/anthraxx/linux-hardened.git" />
